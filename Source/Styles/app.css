@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+:root {
+    --gray: #D2D2D2;
+    --white: #FFFFFF;
+    --orange: #E76F51;
+    --black: #3B3735;
+    --primary-font: "Roboto R","Arial","sans-serif";
+    --primary-font-2: "Roboto M","Arial","sans-serif";
+    --secondary-font: "Archivo B", "Arial","sans-serif";
+}
+
+
+html {
+    font-size: 10px;
+}
+body {
+    font-family: var(--primary-font);
+    font-size: 1.6rem; 
+}
+.container {
+    padding: 0 1rem;
+    width: 110rem;
+    height: 20rem;
+    border: 1px solid rgba(152, 152, 152, 0.71);
+    margin: 1rem auto;
+}
