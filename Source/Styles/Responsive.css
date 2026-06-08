@@ -41,8 +41,11 @@
     .header__left {
         gap: 4rem;
     }
+    .first-boxes__box {
+        width: 48rem;
 
-    
+    }
+
 
 }
 
@@ -52,6 +55,9 @@
     }
     .header-wrapper {
         padding: 3rem 2rem 0rem 2rem;
+    }
+    .Top__par {
+        max-width: 29rem;
     }
 
 }

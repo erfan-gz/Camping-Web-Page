@@ -5,6 +5,7 @@
 }
 
 :root {
+    --body: #FAF4F2;
     --gray: #D2D2D2;
     --white: #FFFFFF;
     --orange: #E76F51;
@@ -22,6 +23,7 @@ html {
 body {
     font-family: var(--primary-font);
     font-size: 1.6rem;
+    background-color: var(--body);
 
 }
 
@@ -38,7 +40,7 @@ a {
  */
 
 .btn {
-    padding: 1.1rem 2.8rem;
+    padding: 1.2rem 2.8rem;
     border: 1px solid white;
     border-radius: 4rem;
 }
@@ -48,7 +50,7 @@ a {
 */
 .container {
     padding: 0 1rem;
-    width: 110rem;
+    width: 120rem;
     height: max-content;
     margin: 0 auto;
 }
@@ -195,21 +197,16 @@ a {
 
 .Top {
     text-align: center;
-    padding-top: 10rem;
+    padding-top: 12rem;
     color: var(--white);
-
-
-
 }
 .Top__head {
     font-family: "Archivo B";
     font-size: 4rem;
     max-width: 32rem;
     margin: 0 auto;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     padding: 0 2rem;
-
-
 
 }
 .Top__par {
@@ -233,7 +230,51 @@ a {
     color: var(--white);
     font-size: 1.4rem;
     font-family: "Roboto M";
+}
+
+.main {
+    text-align: center;
 
 
 
+}
+.first-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: -9rem 1.5rem 0 1.5rem;
+}
+.first-boxes__box {
+    border-radius: 1.7rem;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 27rem;
+    height: 22rem;
+    padding: 2rem;
+    box-shadow: 1px 1px 20px #7c7c7c45;
+    
+}
+.first-boxes__img {
+    margin-bottom: 2rem;
+    width: 5.5rem;
+}
+.first-boxes__title {
+    font-family: "Archivo B";
+    margin-bottom: 1.5rem;
+    color: var(--black);
+    font-size: 1.5rem;
+
+
+
+
+}
+.first-boxes__par {
+    line-height: 2.2rem;
+    font-size: 1.3rem;
+    color: var(--black);
 }
