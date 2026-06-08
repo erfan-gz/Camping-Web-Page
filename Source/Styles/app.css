@@ -26,7 +26,9 @@ body {
     background-color: var(--body);
 
 }
-
+svg {
+    width: 100%;
+}
 a {
     display: block;
     text-decoration: none;
@@ -200,6 +202,7 @@ a {
     padding-top: 12rem;
     color: var(--white);
 }
+
 .Top__head {
     font-family: "Archivo B";
     font-size: 4rem;
@@ -209,6 +212,7 @@ a {
     padding: 0 2rem;
 
 }
+
 .Top__par {
     font-size: 1.2rem;
     max-width: 40rem;
@@ -217,11 +221,9 @@ a {
     line-height: 1.7rem;
     padding: 0 3rem;
 }
-.Top__link-wrapper {
 
+.Top__link-wrapper {}
 
-
-}
 .Top__link {
     width: 13rem;
     margin: 0 auto;
@@ -238,6 +240,7 @@ a {
 
 
 }
+
 .first-boxes {
     display: flex;
     justify-content: center;
@@ -246,6 +249,7 @@ a {
     gap: 2rem;
     margin: -9rem 1.5rem 0 1.5rem;
 }
+
 .first-boxes__box {
     border-radius: 1.7rem;
     background-color: var(--white);
@@ -257,12 +261,15 @@ a {
     height: 22rem;
     padding: 2rem;
     box-shadow: 1px 1px 20px #7c7c7c45;
-    
+
 }
+
 .first-boxes__img {
     margin-bottom: 2rem;
     width: 5.5rem;
+    margin-top: -1.5rem;
 }
+
 .first-boxes__title {
     font-family: "Archivo B";
     margin-bottom: 1.5rem;
@@ -273,8 +280,28 @@ a {
 
 
 }
+
 .first-boxes__par {
     line-height: 2.2rem;
     font-size: 1.3rem;
     color: var(--black);
+}
+
+
+.destination {
+    text-align: center;
+    margin-top: 12rem;
+}
+.destination__img {
+
+
+}
+.destination__title {
+    font-family: "Archivo B";
+    font-size: 3.5rem;
+    max-width: 48rem;
+    margin: 5rem auto;
+    color: var(--black);
+
+
 }
