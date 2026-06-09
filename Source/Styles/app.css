@@ -25,10 +25,17 @@ body {
     font-size: 1.6rem;
     background-color: var(--body);
 
+
 }
+
+img {
+    width: 100%;
+}
+
 svg {
     width: 100%;
 }
+
 a {
     display: block;
     text-decoration: none;
@@ -292,10 +299,13 @@ a {
     text-align: center;
     margin-top: 12rem;
 }
+
 .destination__img {
+    width: 10rem;
 
 
 }
+
 .destination__title {
     font-family: "Archivo B";
     font-size: 3.5rem;
@@ -304,4 +314,100 @@ a {
     color: var(--black);
 
 
+}
+
+.second-boxes {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+
+}
+
+.second-boxes__box {
+    width: 27rem;
+    border-radius: 1.7rem;
+    background-color: var(--white);
+    padding: 2.5rem;
+
+}
+
+.second-boxes__img-wrapper {
+    position: relative;
+    margin-bottom: 3rem;
+
+
+}
+
+.second-boxes__img {
+    border-radius: 1.7rem;
+
+
+}
+
+.second-boxes__price {
+    position: absolute;
+    bottom: -21px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    font-family: "Roboto M";
+    color: var(--orange);
+    background-color: var(--white);
+    padding: 1.5rem 2.9rem;
+    font-size: 1.3rem;
+    border-radius: 1.4rem;
+}
+
+/* -----------heart----------- */
+.heart {
+    width: 100px;
+    height: 100px;
+    background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    transition: background-position 1s steps(28);
+    transition-duration: 0s;
+
+    &.is-active {
+        transition-duration: 1s;
+        background-position: -2800px 0;
+        filter: invert(55%) sepia(60%) saturate(800%) hue-rotate(320deg) brightness(0.95) contrast(1.1);
+    }
+}
+
+
+.stage {
+    position: relative;
+    top: -26px;
+    right: -26px;
+    position: absolute;
+    width: 10rem;
+}
+
+/* ------------------------- */
+
+.second-boxes__title {
+    font-family: "Archivo B";
+    color: var(--black);
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.second-boxes__par {
+    color: var(--black);
+    line-height: 2.2rem;
+    margin-bottom: 1.7rem;
+    font-size: 1.3rem;
+}
+
+.second-boxes__link {
+    font-family: "Roboto M";
+    color: #8D8D8D;
+    background-color: #80808014;
+    width: 15rem;
+    font-size: 1.4rem;
+    margin: 0 auto;
 }
