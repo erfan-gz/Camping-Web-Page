@@ -68,7 +68,7 @@ a {
 .header {
     height: 80vh;
     color: var(--gray);
-    background-image: linear-gradient(266deg, rgba(59, 55, 53, 0.475) 100%, rgba(59, 55, 53, 1) 0%), url(../Imgs/img/header-bg.jpg);
+    background-image: linear-gradient(266deg, rgba(59, 55, 53, 0.475) 100%, rgba(59, 55, 53, 1) 0%), url("../Imgs/img/header-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -81,6 +81,8 @@ a {
     justify-content: space-between;
     align-items: center;
     padding-top: 3rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
 
 
 }
@@ -232,7 +234,7 @@ a {
 .Top__link-wrapper {}
 
 .Top__link {
-    width: 13rem;
+    width: 16rem;
     margin: 0 auto;
     background-color: var(--orange);
     border: none;
@@ -364,98 +366,101 @@ a {
 
 /* -----------heart----------- */
 .con-like {
-  position: absolute;
+    position: absolute;
     width: 29px;
     top: -5px;
     right: 6px;
     height: 50px;
 }
+
 input.like {
-    top: -3px;
+    top: 10px;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 48%;
     opacity: 0;
     z-index: 20;
     cursor: pointer;
     left: -3px;
+
 }
 
 .con-like .like {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  z-index: 20;
-  cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 48%;
+    opacity: 0;
+    z-index: 20;
+    cursor: pointer;
 }
 
 .con-like .checkmark {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .con-like .outline,
 .con-like .filled {
-  fill: var(--orange);
-  position: absolute;
+    fill: var(--orange);
+    position: absolute;
 }
 
 .con-like .filled {
-  animation: kfr-filled 0.5s;
-  display: none;
+    animation: kfr-filled 0.5s;
+    display: none;
 }
 
 .con-like .celebrate {
-  position: absolute;
-  animation: kfr-celebrate 0.5s;
-  animation-fill-mode: forwards;
-  display: none;
+    position: absolute;
+    animation: kfr-celebrate 0.5s;
+    animation-fill-mode: forwards;
+    display: none;
 }
 
 .con-like .poly {
-  stroke: var(--orange);
-  fill: var(--orange);
+    stroke: var(--orange);
+    fill: var(--orange);
 }
 
-.con-like .like:checked ~ .checkmark .filled {
-  display: block
+.con-like .like:checked~.checkmark .filled {
+    display: block
 }
 
-.con-like .like:checked ~ .checkmark .celebrate {
-  display: block
+.con-like .like:checked~.checkmark .celebrate {
+    display: block
 }
 
 @keyframes kfr-filled {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
 
-  50% {
-    opacity: 1;
-    transform: scale(1.2);
-  }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
 }
 
 @keyframes kfr-celebrate {
-  0% {
-    transform: scale(0);
-  }
+    0% {
+        transform: scale(0);
+    }
 
-  50% {
-    opacity: 0.8;
-  }
+    50% {
+        opacity: 0.8;
+    }
 
-  100% {
-    transform: scale(1.2);
-    opacity: 0;
-    display: none;
-  }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+        display: none;
+    }
 }
+
 /* ------------------------- */
 
 .second-boxes__title {
@@ -479,4 +484,115 @@ input.like {
     width: 15rem;
     font-size: 1.4rem;
     margin: 0 auto;
+}
+
+.view-all-link {
+    width: 16rem;
+    margin: 5rem auto;
+    background-color: transparent;
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    font-size: 1.4rem;
+    font-family: "Roboto M";
+    margin-bottom: 12rem;
+}
+
+.touch-section {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8rem;
+    padding: 0px 5rem;
+    background-color: #F8E1DB;
+    border-radius: 2rem;
+    margin-bottom: 9rem;
+
+
+}
+
+.touch-section__left {
+    text-align: left;
+    width: 50%;
+
+
+}
+
+.touch-section__title {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-family: "Archivo B";
+
+
+}
+
+.touch-section__par {
+    margin-bottom: 3rem;
+    font-family: "Roboto M";
+    line-height: 2.5rem;
+    max-width: 42rem;
+    font-size: 1.3rem;
+
+
+}
+
+.touch-section__input-wrapper {
+    position: relative;
+    height: 6rem;
+    max-width: 49rem;
+
+
+}
+
+.touch-section__input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-left: 5rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: white;
+    font-family: "Roboto R";
+    box-shadow: 1px 1px 8px #b4b4b436;
+
+
+}
+
+.touch-section__email {
+    width: 2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
+
+
+}
+
+.touch-section__send {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    top: 50%;
+    right: 11px;
+    transform: translateY(-50%);
+    display: block;
+    background-color: var(--orange);
+    padding: 9px;
+    border-radius: 15px;
+
+
+}
+
+.touch-section__right {
+    width: 50%;
+
+
+}
+
+.touch-section__img {
+    width: 40rem;
+    padding: 2rem;
+    max-width: 40rem;
+
+
 }
