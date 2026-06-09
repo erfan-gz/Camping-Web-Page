@@ -2,10 +2,11 @@
     .container {
         width: 94rem;
     }
+
     .hamburger-menu {
         display: none;
     }
-    
+
 }
 
 @media (max-width: 992px) {
@@ -16,8 +17,27 @@
     .header__right {
         display: none;
     }
+
     .header__left {
         gap: 7rem;
+    }
+
+    .touch-section {
+        gap: 0rem;
+    }
+
+    .touch-section__title {
+        font-size: 2.5rem;
+        margin-top: 3rem;
+    }
+
+    .touch-section__par {
+        font-size: 1.2rem;
+    }
+
+    .touch-section__input-wrapper {
+        margin-bottom: 2rem;
+        max-width: 23rem;
     }
 
 }
@@ -26,27 +46,72 @@
     .container {
         width: 53rem;
     }
+
     .desktop-menu {
         display: none;
     }
+
     .hamburger-menu {
         display: flex;
     }
+
     .side-menu {
         display: block;
     }
+
     .logo {
         width: 5rem;
     }
+
     .header__left {
         gap: 4rem;
     }
+
     .first-boxes__box {
         width: 48rem;
 
     }
+
     .second-boxes__box {
-        width: 37rem;
+        width: 48rem;
+    }
+
+    .touch-section {
+        flex-direction: column;
+    }
+
+    .touch-section__right {
+        width: 100%;
+        order: 1;
+        margin-bottom: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .touch-section__left {
+        width: 100%;
+        order: 2;
+        text-align: center;
+    }
+
+    .touch-section__title {
+        max-width: 23rem;
+        font-size: 3rem;
+        margin: 0 auto 3rem auto;
+    }
+
+    .touch-section__par {
+        font-size: 1.4rem;
+        max-width: 28rem;
+        margin: 0 auto 3rem auto;
+    }
+
+    .touch-section__input-wrapper {
+        margin: 0 auto 3rem auto;
+        max-width: 32rem;
+    }
+    .second-boxes__img-wrapper {
+        max-width: 32rem;
+     margin: 0 auto 3rem auto;
     }
 
 
@@ -56,12 +121,15 @@
     .container {
         width: 100%;
     }
+
     .header-wrapper {
         padding: 3rem 2rem 0rem 2rem;
     }
+
     .Top__par {
         max-width: 29rem;
     }
+
     .destination__title {
         font-size: 2.8rem;
     }

@@ -507,6 +507,8 @@ input.like {
     background-color: #F8E1DB;
     border-radius: 2rem;
     margin-bottom: 9rem;
+    color: var(--black);
+    margin: 0 1.5rem 4rem 1.5rem;
 
 
 }
@@ -554,6 +556,7 @@ input.like {
     background-color: white;
     font-family: "Roboto R";
     box-shadow: 1px 1px 8px #b4b4b436;
+    padding-right: 5rem;
 
 
 }
@@ -590,9 +593,7 @@ input.like {
 }
 
 .touch-section__img {
-    width: 40rem;
+    width: 100%;
     padding: 2rem;
     max-width: 40rem;
-
-
 }
