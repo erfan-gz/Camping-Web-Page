@@ -7,10 +7,14 @@
     font-family: "Roboto R";
     src: url("../Fonts/Roboto/Roboto-Regular.ttf");
 }
+
+
 @font-face {
     font-family: "Roboto M";
     src: url("../Fonts/Roboto/Roboto-Medium.ttf");
 }
+
+
 @font-face {
     font-family: "Archivo B";
     src: url("../Fonts/Archivo/Archivo-Black.ttf");

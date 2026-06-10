@@ -307,7 +307,7 @@ a {
 }
 
 .destination__img {
-    width: 10rem;
+    width: 9rem;
 
 
 }
@@ -370,9 +370,9 @@ a {
 /* -----------heart----------- */
 .con-like {
     position: absolute;
-    width: 23px;
-    top: -7px;
-    right: 6px;
+    width: 16px;
+    top: -8.5px;
+    right: 8px;
     height: 50px;
 }
 
@@ -433,7 +433,7 @@ input.like {
 }
 
 .con-like .like:checked~.checkmark .celebrate {
-    display: block
+    display: none
 }
 
 @keyframes kfr-filled {
@@ -613,11 +613,14 @@ input.like {
     align-items: flex-start;
     color: var(--black);
     padding: 9rem 5rem 3rem 5rem;
+    gap: 4rem;
 }
 
 .description-wrapper {}
 
-.long-description {}
+.long-description {
+    width: 100%;
+}
 
 .description-wrapper__title {
     font-family: "Archivo B";
@@ -668,17 +671,24 @@ input.like {
     margin-bottom: 0.5rem;
 }
 
-.get-to-know {}
+.get-to-know {
+    flex-grow: 1;
+}
 
-.plan-with-us {}
+.plan-with-us {
+    flex-grow: 1;
+}
 
-.let-us-help {}
+.let-us-help {
+    flex-grow: 1;
+}
 
 .wrapper {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 5rem;
+    width: 100%;
 }
 
 .bottom-text {
@@ -718,10 +728,10 @@ input.like {
 
 .like-wrapper {
     position: absolute;
-    width: 35px;
+    width: 32px;
     top: 6px;
     right: 12px;
-    height: 35px;
+    height: 32px;
     background-color: var(--white);
     border-radius: 1.5rem;
 }
