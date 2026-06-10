@@ -72,7 +72,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 0 0 10rem 10rem;
+    border-radius: 0 0 16rem 15rem;
 }
 
 
@@ -596,4 +596,95 @@ input.like {
     width: 100%;
     padding: 2rem;
     max-width: 40rem;
+}
+
+.footer {
+    background-color: #F8E1DB;
+    border-radius: 15rem 15rem 0 0;
+}
+
+.descriptions {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: var(--black);
+    padding: 9rem 5rem 3rem 5rem;
+}
+
+.description-wrapper {}
+
+.long-description {}
+
+.description-wrapper__title {
+    font-family: "Archivo B";
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+
+
+}
+
+.description-wrapper__par {
+    font-family: 'Roboto R';
+    line-height: 2.5rem;
+    font-size: 1.3rem;
+    max-width: 48rem;
+
+
+}
+
+.description-wrapper__list {
+    font-size: 1.3rem;
+
+
+}
+
+.descriptio-wrapper__item {
+    font-family: 'Roboto R';
+    line-height: 2.5rem;
+
+
+}
+
+.badge-wrapper {
+    padding: 2rem 5rem 3rem 5rem;
+    text-align: center;
+
+
+}
+
+.appstore-badge {
+    width: 12rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.googleplay-badge {
+    width: 12rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.get-to-know {}
+
+.plan-with-us {}
+
+.let-us-help {}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
+}
+
+.bottom-text {
+    margin-bottom: 2rem;
+    font-family: 'Archivo B';
+}
+
+.copy-right {
+    text-align: center;
+    color: var(--black);
+    font-size: 1.3rem;
+    padding-bottom: 3rem;
 }

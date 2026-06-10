@@ -7,6 +7,19 @@
         display: none;
     }
 
+    .descriptions {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5rem;
+        text-align: left;
+    }
+
+    .wrapper {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
 }
 
 @media (max-width: 992px) {
@@ -109,9 +122,10 @@
         margin: 0 auto 3rem auto;
         max-width: 32rem;
     }
+
     .second-boxes__img-wrapper {
         max-width: 32rem;
-     margin: 0 auto 3rem auto;
+        margin: 0 auto 3rem auto;
     }
 
 
@@ -132,6 +146,17 @@
 
     .destination__title {
         font-size: 2.8rem;
+    }
+
+    .header {
+        border-radius: 0 0 10rem 10rem;
+    }
+
+    .footer {
+        border-radius: 10rem 10rem 0 0;
+    }
+    .copy-right {
+        font-size: 1.1rem;
     }
 
 }
