@@ -62,6 +62,7 @@ a {
     width: 120rem;
     height: max-content;
     margin: 0 auto;
+    position: relative;
 }
 
 
@@ -245,7 +246,9 @@ a {
 
 .main {
     text-align: center;
-
+    margin-top: -9rem;
+    overflow: hidden;
+    position: relative;
 
 
 }
@@ -256,7 +259,7 @@ a {
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
-    margin: -9rem 1.5rem 0 1.5rem;
+    margin: 0 1.5rem 0 1.5rem;
 }
 
 .first-boxes__box {
@@ -509,6 +512,9 @@ input.like {
     margin-bottom: 9rem;
     color: var(--black);
     margin: 0 1.5rem 4rem 1.5rem;
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
 
 
 }
@@ -687,4 +693,25 @@ input.like {
     color: var(--black);
     font-size: 1.3rem;
     padding-bottom: 3rem;
+}
+
+.shape1 {
+    position: absolute;
+    width: 80rem;
+    z-index: -2;
+    top: 8rem;
+    right: -20rem;
+}
+.shape2 {
+    position: absolute;
+    width: 80rem;
+    z-index: -2;
+    top: 66rem;
+    left: -20rem;
+}
+.shape3 {
+    position: absolute;
+    width: 137rem;
+    z-index: -2;
+    left: -13rem;
 }

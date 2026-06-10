@@ -127,6 +127,14 @@
         max-width: 32rem;
         margin: 0 auto 3rem auto;
     }
+    .shape3 {
+        width: 173rem;
+        left: -64rem;
+        top: 24rem;
+    }
+    .shape2 {
+        top: 129rem;
+    }
 
 
 }
