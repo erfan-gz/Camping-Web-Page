@@ -1,5 +1,6 @@
 const sideMenu = document.querySelector(".side-menu")
 const hamburgerMenu = document.querySelector(".hamburger-menu")
+const arrowTopWrapper = document.querySelector(".arrow-top-wrapper")
 
 
 hamburgerMenu.addEventListener("click", function() {
@@ -11,4 +12,10 @@ hamburgerMenu.addEventListener("click", function() {
 
     }
     
+})
+
+
+arrowTopWrapper.addEventListener("click", function() {
+
+        window.scrollTo({top: 0, behavior: 'smooth'})
 })

@@ -30,6 +30,7 @@ body {
 
 img {
     width: 100%;
+
 }
 
 svg {
@@ -46,7 +47,7 @@ a {
 =================
     Component
 =================
- */
+*/
 
 .btn {
     padding: 1.2rem 2.8rem;
@@ -64,6 +65,12 @@ a {
     margin: 0 auto;
     position: relative;
 }
+
+/* 
+==============
+    Header
+==============
+*/
 
 
 .header {
@@ -102,7 +109,6 @@ a {
 
 .logo img {
     width: 100%;
-
 }
 
 .desktop-menu {
@@ -113,7 +119,35 @@ a {
     font-size: 1.5rem;
 }
 
-.desktop-menu__item {}
+.desktop-menu__item {
+    transition: all 150ms ease-in;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.desktop-menu__item:hover {
+    color: var(--white);
+    transform: scale(1.05);
+}
+
+.desktop-menu__item::after {
+    content: " ";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background-color: var(--orange);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -3px;
+    display: block;
+    transition: all 150ms ease-in;
+}
+
+.desktop-menu__item:hover::after {
+    display: block;
+    width: 90%;
+}
 
 .header__right {}
 
@@ -134,8 +168,21 @@ a {
 
 .sing-up {}
 
-.sing-in {}
+.sing-in {
+    transition: all 150ms ease-in;
+}
 
+.sing-in:hover {
+    background-color: var(--white);
+    color: var(--black);
+    transform: scale(1.05);
+}
+
+/* 
+==============
+    Burger
+==============
+*/
 
 .hamburger-menu {
     width: 5rem;
@@ -194,6 +241,11 @@ a {
     stroke-width: 6;
 }
 
+/* 
+=================
+    Side-Menu
+=================
+*/
 .side-menu {
     display: none;
     position: fixed;
@@ -207,6 +259,11 @@ a {
     border-radius: 0 0 10rem 10rem;
 }
 
+/* 
+===========
+    Top
+===========
+*/
 .Top {
     text-align: center;
     padding-top: 12rem;
@@ -244,6 +301,11 @@ a {
     font-family: "Roboto M";
 }
 
+/* 
+============
+    Main
+============
+*/
 .main {
     text-align: center;
     margin-top: -9rem;
@@ -252,6 +314,12 @@ a {
 
 
 }
+
+/* 
+==================
+    First-Boxes
+==================
+*/
 
 .first-boxes {
     display: flex;
@@ -279,7 +347,7 @@ a {
 
 .first-boxes__img {
     margin-bottom: 2rem;
-    width: 5.5rem;
+    width: 4rem;
     margin-top: -1.5rem;
 }
 
@@ -300,6 +368,11 @@ a {
     color: var(--black);
 }
 
+/* 
+===================
+    Destination
+===================
+*/
 
 .destination {
     text-align: center;
@@ -314,12 +387,17 @@ a {
 
 .destination__title {
     font-family: "Archivo B";
-    font-size: 3.5rem;
+    font-size: 3rem;
     max-width: 48rem;
     margin: 5rem auto;
     color: var(--black);
 }
 
+/* 
+===================
+    Second-Boxes
+===================
+*/
 .second-boxes {
 
     display: flex;
@@ -338,6 +416,7 @@ a {
     background-color: var(--white);
     padding: 2.5rem;
     flex-grow: 1;
+    box-shadow: 1px 1px 5px #b5b5b545;
 
 }
 
@@ -362,12 +441,16 @@ a {
     font-family: "Roboto M";
     color: var(--orange);
     background-color: var(--white);
-    padding: 1.5rem 2.9rem;
+    padding: 1.3rem 2.9rem;
     font-size: 1.3rem;
     border-radius: 1.4rem;
 }
 
-/* -----------heart----------- */
+/* 
+=================
+      Heart
+=================
+*/
 .con-like {
     position: absolute;
     width: 16px;
@@ -464,6 +547,16 @@ input.like {
     }
 }
 
+.like-wrapper {
+    position: absolute;
+    width: 32px;
+    top: 13px;
+    right: 12px;
+    height: 32px;
+    background-color: var(--white);
+    border-radius: 1.5rem;
+}
+
 /* ------------------------- */
 
 .second-boxes__title {
@@ -498,8 +591,20 @@ input.like {
     font-size: 1.4rem;
     font-family: "Roboto M";
     margin-bottom: 12rem;
+    transition: all 150ms ease-in;
 }
 
+.view-all-link:hover {
+    background-color: var(--orange);
+    color: var(--body);
+    transform: scale(1.05);
+}
+
+/* 
+===================
+    Touch-Section
+===================
+*/
 .touch-section {
     margin-top: 5rem;
     display: flex;
@@ -515,6 +620,7 @@ input.like {
     position: relative;
     z-index: 0;
     overflow: hidden;
+    margin-bottom: 12rem;
 }
 
 .touch-section__left {
@@ -554,13 +660,14 @@ input.like {
     display: block;
     width: 100%;
     height: 100%;
-    padding-left: 5rem;
+    padding-left: 4rem;
     border: none;
     border-radius: 1.5rem;
     background-color: white;
     font-family: "Roboto R";
     box-shadow: 1px 1px 8px #b4b4b436;
     padding-right: 5rem;
+    outline: none;
 
 
 }
@@ -586,14 +693,14 @@ input.like {
     background-color: var(--orange);
     padding: 9px;
     border-radius: 15px;
+    box-shadow: 1px 1px 9px #e76f51b5;
+    cursor: pointer;
 
 
 }
 
 .touch-section__right {
     width: 50%;
-
-
 }
 
 .touch-section__img {
@@ -602,6 +709,11 @@ input.like {
     max-width: 40rem;
 }
 
+/* 
+===============
+    Footer
+===============
+*/
 .footer {
     background-color: #F8E1DB;
     border-radius: 15rem 15rem 0 0;
@@ -614,6 +726,7 @@ input.like {
     color: var(--black);
     padding: 9rem 5rem 3rem 5rem;
     gap: 4rem;
+    position: relative;
 }
 
 .description-wrapper {}
@@ -663,12 +776,14 @@ input.like {
     width: 12rem;
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
 }
 
 .googleplay-badge {
     width: 12rem;
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
 }
 
 .get-to-know {
@@ -703,6 +818,11 @@ input.like {
     padding-bottom: 3rem;
 }
 
+/* 
+===============
+    Shapes
+===============
+*/
 .shape1 {
     position: absolute;
     width: 80rem;
@@ -726,12 +846,19 @@ input.like {
     left: -13rem;
 }
 
-.like-wrapper {
+.arrow-top-wrapper {
     position: absolute;
-    width: 32px;
-    top: 6px;
-    right: 12px;
-    height: 32px;
+    top: -19px;
+    right: 62px;
     background-color: var(--white);
     border-radius: 1.5rem;
+    padding: 12px;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
+
+.arrow-top {}
