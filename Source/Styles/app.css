@@ -28,6 +28,7 @@ body {
 
 }
 
+
 img {
     width: 100%;
 
@@ -74,7 +75,7 @@ a {
 
 
 .header {
-    height: 80vh;
+    height: 60rem;
     color: var(--gray);
     background-image: linear-gradient(266deg, rgba(59, 55, 53, 0.475) 100%, rgba(59, 55, 53, 1) 0%), url("../Imgs/img/header-bg.jpg");
     background-size: cover;
@@ -156,7 +157,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    font-family: "Roboto M";
+    font-family: var(--primary-font-2);
     font-size: 1.5rem;
 }
 
@@ -257,6 +258,7 @@ a {
     transform: translateY(-70vh);
     transition: all 180ms ease-in;
     border-radius: 0 0 10rem 10rem;
+    z-index: 100;
 }
 
 /* 
@@ -271,7 +273,7 @@ a {
 }
 
 .Top__head {
-    font-family: "Archivo B";
+    font-family: var(--secondary-font);
     font-size: 4rem;
     max-width: 32rem;
     margin: 0 auto;
@@ -298,7 +300,7 @@ a {
     border: none;
     color: var(--white);
     font-size: 1.4rem;
-    font-family: "Roboto M";
+    font-family: var(--primary-font-2);
 }
 
 /* 
@@ -352,7 +354,7 @@ a {
 }
 
 .first-boxes__title {
-    font-family: "Archivo B";
+    font-family: var(--secondary-font);
     margin-bottom: 1.5rem;
     color: var(--black);
     font-size: 1.5rem;
@@ -386,7 +388,7 @@ a {
 }
 
 .destination__title {
-    font-family: "Archivo B";
+    font-family: var(--secondary-font);
     font-size: 3rem;
     max-width: 48rem;
     margin: 5rem auto;
@@ -438,7 +440,7 @@ a {
     bottom: -21px;
     left: 50%;
     transform: translate(-50%, 0px);
-    font-family: "Roboto M";
+    font-family: var(--primary-font-2);
     color: var(--orange);
     background-color: var(--white);
     padding: 1.3rem 2.9rem;
@@ -560,7 +562,7 @@ input.like {
 /* ------------------------- */
 
 .second-boxes__title {
-    font-family: "Archivo B";
+    font-family: var(--secondary-font);
     color: var(--black);
     margin-bottom: 2rem;
     font-size: 1.5rem;
@@ -574,7 +576,7 @@ input.like {
 }
 
 .second-boxes__link {
-    font-family: "Roboto M";
+    font-family: var(--primary-font-2);
     color: #8D8D8D;
     background-color: #80808014;
     width: 15rem;
@@ -589,7 +591,7 @@ input.like {
     border: 1px solid var(--orange);
     color: var(--orange);
     font-size: 1.4rem;
-    font-family: "Roboto M";
+    font-family: var(--primary-font-2);
     margin-bottom: 12rem;
     transition: all 150ms ease-in;
 }
@@ -633,14 +635,14 @@ input.like {
 .touch-section__title {
     margin-bottom: 1rem;
     font-size: 3rem;
-    font-family: "Archivo B";
+    font-family: var(--secondary-font);
 
 
 }
 
 .touch-section__par {
     margin-bottom: 3rem;
-    font-family: "Roboto M";
+    font-family: var(--primary-font-2);
     line-height: 2.5rem;
     max-width: 42rem;
     font-size: 1.3rem;
@@ -663,12 +665,12 @@ input.like {
     padding-left: 4rem;
     border: none;
     border-radius: 1.5rem;
-    background-color: white;
-    font-family: "Roboto R";
+    background-color: var(--white);
+    font-family: var(--primary-font);
     box-shadow: 1px 1px 8px #b4b4b436;
     padding-right: 5rem;
     outline: none;
-
+    font-size: 1.2rem;
 
 }
 
@@ -693,10 +695,8 @@ input.like {
     background-color: var(--orange);
     padding: 9px;
     border-radius: 15px;
-    box-shadow: 1px 1px 9px #e76f51b5;
+    box-shadow: 0px 0px 9px var(--orange);
     cursor: pointer;
-
-
 }
 
 .touch-section__right {
@@ -736,7 +736,7 @@ input.like {
 }
 
 .description-wrapper__title {
-    font-family: "Archivo B";
+    font-family: var(--secondary-font);
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
 
@@ -744,7 +744,7 @@ input.like {
 }
 
 .description-wrapper__par {
-    font-family: 'Roboto R';
+    font-family: var(--primary-font);
     line-height: 2.5rem;
     font-size: 1.3rem;
     max-width: 48rem;
@@ -758,25 +758,32 @@ input.like {
 
 }
 
-.descriptio-wrapper__item {
-    font-family: 'Roboto R';
+.description-wrapper__item {
+    font-family: var(--primary-font);
     line-height: 2.5rem;
+    cursor: pointer;
 
 
+}
+
+.description-wrapper__item:hover {
+    text-decoration: underline;
 }
 
 .badge-wrapper {
     padding: 2rem 5rem 3rem 5rem;
-    text-align: center;
-
+    text-align: left;
+    color: var(--black);
 
 }
+
 
 .appstore-badge {
     width: 12rem;
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
     border-radius: 0.5rem;
+    cursor: pointer;
 }
 
 .googleplay-badge {
@@ -784,6 +791,7 @@ input.like {
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
     border-radius: 0.5rem;
+    cursor: pointer;
 }
 
 .get-to-know {
@@ -808,7 +816,8 @@ input.like {
 
 .bottom-text {
     margin-bottom: 2rem;
-    font-family: 'Archivo B';
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
 }
 
 .copy-right {
@@ -852,12 +861,19 @@ input.like {
     right: 62px;
     background-color: var(--white);
     border-radius: 1.5rem;
-    padding: 12px;
+    padding: 13px;
     width: 4rem;
     height: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    outline: 0px solid var(--orange);
+    box-shadow: 1px 1px 9px #3b37351c;
+}
+
+.arrow-top-wrapper:hover {
+    outline: 1px solid var(--orange);
 
 }
 
