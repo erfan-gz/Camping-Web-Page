@@ -28,6 +28,7 @@
     .descriptions {
         padding: 9rem 1rem 3rem 1rem;
     }
+
     .badge-wrapper {
         padding: 2rem 1rem 3rem 1rem;
     }
@@ -138,6 +139,7 @@
     .touch-section__input-wrapper {
         margin: 0 auto 3rem auto;
         max-width: 32rem;
+
     }
 
     .second-boxes__img-wrapper {
@@ -154,6 +156,7 @@
     .shape2 {
         top: 129rem;
     }
+
     .let-us-help {
         width: 17rem;
     }
@@ -199,6 +202,7 @@
         right: 50%;
         transform: translateX(+50%);
     }
+
     .badge-wrapper {
         padding: 2rem 4rem 3rem 4rem;
     }
@@ -214,5 +218,5 @@
     .touch-section {
         padding: 0px 2rem;
     }
-    
+
 }
